@@ -4,8 +4,9 @@ const port = process.env.PORT || 5000;
 const chefs = require("./database/chefs.json");
 const recipes = require("./database/recipes.json");
 const app = express();
-
+// Middleware:
 app.use(cors());
+
 app.get("/", (req, res) => {
   res.send("Server is running yeah");
 });
